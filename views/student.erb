@@ -1,0 +1,13 @@
+<p>List of students</p>
+
+
+<% for student in @students %>
+
+<p>First Name: <%= student.f_name %></p>
+<p>Last Name: <%= student.l_name %></p>
+<p>House: <%= student.house %></p>
+<p>Age: <%= student.age %></p>
+
+<hr>
+
+<% end %>

@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS  students;
+DROP TABLE IF EXISTS  houses;
+
+
+CREATE TABLE houses(
+  id SERIAL8 PRIMARY KEY,
+  name VARCHAR(255)
+);
+
+
+CREATE TABLE students(
+  id SERIAL8 PRIMARY KEY,
+  f_name VARCHAR(255),
+  l_name VARCHAR(255),
+  house SERIAL8 REFERENCES houses(id) ON DELETE CASCADE,
+  age int
+);

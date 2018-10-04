@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hogwarts Students</title>
+  <!-- <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/style.css"> -->
+</head>
+<body>
+  <section class="wrapper">
+    <!--should be section not div-->
+    <header>
+      Hogwarts Students
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/hogwarts/new">Add a new student</a></li>
+        <li><a href="/hogwarts">List of all student</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>Hogwarts Property</footer>
+  </section>
+</body>
+</html>
